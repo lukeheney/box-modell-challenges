@@ -11,25 +11,62 @@
 	.container{
 			margin-right: auto;
 			margin-left: auto;
-			height: 300px
-			width: 300px
+			height: 500px;
+			width: 800px;
+			background-color: none;
+			border-radius: 15px;
+			border: 2px solid violet;
+			padding: 10px;
+	}
+
+	.box{
 			background-color: blue;
+			border-radius: 10px;
+			text-align: center;
+			margin: 5px;
+			vertical-align: middle;
+			font-size: 25px;
+			padding: 10px;
+
 	}
 
 	#header{
-			height: 50px
-			width: 90%;
+			height: 80px;
+			width: 770px;
+			text-align: center;
+			vertical-align: top;
+
 	}
 
+	#content{
+			width: 480px;
+			height: 280px;
+			display: inline-block;
+			float: left;
+
+	}
+
+	#side-bar{
+			width: 260px;
+			height: 280px;
+			display: inline-block;
+			float: left;
+	}
+
+	#footer{
+			width: auto;
+			height: 50px;
+			clear: both;
+	}
 </style>
 </head>
 <body>
 	
 	<div class="container">
-		<div id="header"></div>
-		<div id="content"></div>
-		<div id="side-bar"></div>
-		<div id="footer"></div>
+		<div class="box" id="header">Header</div>
+		<div class="box" id="content">Content</div>
+		<div class="box" id="side-bar">Side-bar</div>
+		<div class="box" id="footer">Footer</div>
 	</div>
 
 </body>
